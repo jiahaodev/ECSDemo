@@ -12,7 +12,7 @@ public class RotationSpeedSystem_ForEach : ComponentSystem
     {
         Entities.ForEach((ref RotationSpeed_ForEach rotationSpeed, ref Rotation rotation) =>
         {
-            var deltaTime = Time.deltaTime; 
+            var deltaTime = Time.DeltaTime; 
 
             /* 旋转Cube，代码逻辑不用管，这里可以是其他任何逻辑 */
             rotation.Value = math.mul(math.normalize(rotation.Value),
